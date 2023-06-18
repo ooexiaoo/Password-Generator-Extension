@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Password Generator</title>
+  <script src="popup.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Password Generator</h1>
+  <div>
+    <label>Length: </label>
+    <input type="number" id="lengthInput" min="6" max="32" value="12">
+  </div>
+  <div>
+    <label>Include Uppercase: </label>
+    <input type="checkbox" id="uppercaseCheckbox" checked>
+  </div>
+  <div>
+    <label>Include Lowercase: </label>
+    <input type="checkbox" id="lowercaseCheckbox" checked>
+  </div>
+  <div>
+    <label>Include Numbers: </label>
+    <input type="checkbox" id="numbersCheckbox" checked>
+  </div>
+  <div>
+    <label>Include Special Characters: </label>
+    <input type="checkbox" id="specialCharsCheckbox" checked>
+  </div>
+  <div>
+    <button id="generateButton">Generate Password</button>
+    <button id="copyButton">Copy Password</button>
+  </div>
+  <div>
+    <label for="passwordInput">Password:</label>
+    <input type="text" id="passwordInput" readonly>
+  </div>
+</body>
+</html>
